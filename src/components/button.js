@@ -1,9 +1,9 @@
-function Buttons(){
+function Buttons({activeButton, onButtonClick}){
     const buttonsTitles = ['work experience', 'education', 'skills', 'projects', 'volunteering'];
     let buttonsArray = [];
     for(let button of buttonsTitles){
-        let isSelected = button === 'work experience';
-        let buttonMarkup = <button class={`button ${isSelected ? ' selected' : '' }`} id={button}>{button}</button>
+        let buttonMarkup = <button class={`button ${activeButton === button ? ' selected' : '' }`} id={button} 
+        onClick ={() => onButtonClick(button)}>{button}</button>
         buttonsArray.push(buttonMarkup);
     }      
 

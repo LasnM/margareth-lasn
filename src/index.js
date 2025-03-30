@@ -1,11 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { createRoot } from 'react-dom/client';
 import Button from './components/button';
-import './styles.css'
+import WorkExperience from './components/workExperience';
+import Education from './components/education';
+import Skills from './components/skills';
+import Projects from './components/projects';
+import Volunteering from './components/volunteering';
+import './styles.css';
 
-const buttonsRoot = createRoot(document.getElementById('navigation-buttons'));
+function Main(){
+  const [activeSection, setActiveSection] = useState('work experience');
 
-buttonsRoot.render(<Button />);
+  const renderContent = () => {
+    if (activeSection === 'work experience') return <WorkExperience />
+    else if (activeSection === 'education') return <Education />
+    else if (activeSection === 'skills') return <Skills />
+    else if (activeSection === 'projects') return <Projects />
+    else if (activeSection === 'volunteering') return <Volunteering />
+  }
 
-const contentRoot = createRoot(document.getElementById('content-card'));
-contentRoot.render()
+  return (
+    <>
+      <div class='content-buttons'>
+        <Button activeButton={activeSection} onButtonClick={setActiveSection} />
+      </div>
+
+      <div class="content-section">
+        {renderContent()}
+      </div>
+    </>
+  )
+}
+
+const root = createRoot(document.getElementById('resumeContent'));
+root.render(<Main />)
+
