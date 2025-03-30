@@ -51,6 +51,14 @@ img {
     border-style: solid;
 }
 
+.button:hover {
+    background-color: #FCA311;  
+}
+
+.selected {
+    background-color: #FCA311;
+}
+
 @font-face {
     font-family: 'Bebas Neue';
     src: url(../public/fonts/Bebas_Neue/BebasNeue-Regular.woff2) format('woff2');
