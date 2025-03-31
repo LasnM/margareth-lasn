@@ -7,7 +7,7 @@ function Buttons({activeButton, onButtonClick}){
         buttonsArray.push(buttonMarkup);
     }      
 
-    return <div class="container button-group">{buttonsArray}</div>;
+    return <div class="button-group">{buttonsArray}</div>;
 }
 
 export default Buttons;

@@ -9,8 +9,26 @@ h4 {
     padding-bottom: 6px;
 }
 
+h5 {
+    font-family: 'Bebas Neue';
+}
+
+span {
+    margin-right: 16px;
+}
+
+p {
+    margin-bottom: 3px;
+}
+
+.text {
+    margin-bottom: 8px;
+}
+
 .container {
     margin-top: 16px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .heading {
     text-align: center;
@@ -34,9 +52,10 @@ img {
     margin-right: auto;
 }
 
-.button-group{
-    margin-left: 25%;
-    margin-right: 25%;
+/* wouldnt say this is the best way to center the buttons, but will figure that out later */
+.button-group {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .button {
@@ -52,11 +71,32 @@ img {
 }
 
 .button:hover {
-    background-color: #FCA311;  
+    background-color: #E5E5E5;  
 }
 
 .selected {
     background-color: #FCA311;
+}
+
+.content-section {
+    background-color: #E5E5E5;
+    padding: 24px;
+    padding-bottom: 16px;
+    border-radius: 8px;
+    max-width: 1015px;
+}
+
+.list-title {
+    padding-left: 24px;
+}
+
+.skillset {
+    padding-left: 3%;
+}
+
+.git-image {
+    max-width: 32px;
+    margin-right: 16px;
 }
 
 @font-face {
