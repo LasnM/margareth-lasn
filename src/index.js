@@ -1,3 +1,5 @@
+//for design later on fix the porportions so everything is aligned correctly
+//even by pixels not just by eye
 import React, {useState} from 'react';
 import { createRoot } from 'react-dom/client';
 import Button from './components/button';
