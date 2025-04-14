@@ -2,7 +2,7 @@
 //even by pixels not just by eye
 import React, {useState} from 'react';
 import { createRoot } from 'react-dom/client';
-import Button from './components/button';
+import Button from './components/sectionButtons';
 import WorkExperience from './components/workExperience';
 import Education from './components/education';
 import Skills from './components/skills';
