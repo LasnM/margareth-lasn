@@ -2,13 +2,14 @@
 //even by pixels not just by eye
 import React, {useState} from 'react';
 import { createRoot } from 'react-dom/client';
-import Button from './components/sectionButtons';
+import SectionButton from './components/sectionButtons';
 import WorkExperience from './components/workExperience';
 import Education from './components/education';
 import Skills from './components/skills';
 import Projects from './components/projects';
 import Volunteering from './components/volunteering';
 import About from './components/about';
+import ContactMeButton from './components/contactMeButton';
 import './styles.css';
 
 function MainContent(){
@@ -25,7 +26,7 @@ function MainContent(){
   return (
     <>
       <div class='content-buttons'>
-        <Button activeButton={activeSection} onButtonClick={setActiveSection} />
+        <SectionButton activeButton={activeSection} onButtonClick={setActiveSection} />
       </div>
 
       <div class="content-section">
@@ -34,6 +35,9 @@ function MainContent(){
     </>
   )
 }
+
+const rootHeader = createRoot(document.getElementById('header'));
+rootHeader.render(<ContactMeButton />);
 
 const rootAboutMe = createRoot(document.getElementById('aboutMe'));
 rootAboutMe.render(<About />);
