@@ -8,9 +8,10 @@ import Education from './components/education';
 import Skills from './components/skills';
 import Projects from './components/projects';
 import Volunteering from './components/volunteering';
+import About from './components/about';
 import './styles.css';
 
-function Main(){
+function MainContent(){
   const [activeSection, setActiveSection] = useState('work experience');
 
   const renderContent = () => {
@@ -34,6 +35,10 @@ function Main(){
   )
 }
 
-const root = createRoot(document.getElementById('resumeContent'));
-root.render(<Main />)
+const rootAboutMe = createRoot(document.getElementById('aboutMe'));
+rootAboutMe.render(<About />);
+
+const rootMainContent = createRoot(document.getElementById('resumeContent'));
+rootMainContent.render(<MainContent />)
+
 
