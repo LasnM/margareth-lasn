@@ -10,6 +10,7 @@ import Projects from './components/projects';
 import Volunteering from './components/volunteering';
 import About from './components/about';
 import ContactMeButton from './components/contactMeButton';
+import ContactForm from './components/contactForm';
 import './styles.css';
 
 function MainContent(){
@@ -44,5 +45,8 @@ rootAboutMe.render(<About />);
 
 const rootMainContent = createRoot(document.getElementById('resumeContent'));
 rootMainContent.render(<MainContent />)
+
+const rootContactForm = createRoot(document.getElementById('contactForm'));
+rootContactForm.render(<ContactForm />);
 
 
