@@ -43,7 +43,7 @@ img {
     font-family: 'Bebas Neue';
 }
 
-.about-me {
+.about-me, .contact-form {
     background-color: #FCA311;
     border-radius: 8px;
     padding: 10px;
