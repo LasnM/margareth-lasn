@@ -1,13 +1,20 @@
+import Button from './button';
+
 function Buttons({activeButton, onButtonClick}){
     const buttonsTitles = ['work experience', 'education', 'skills', 'projects', 'volunteering'];
-    let buttonsArray = [];
-    for(let button of buttonsTitles){
-        let buttonMarkup = <button class={`button ${activeButton === button ? ' selected' : '' }`} id={button} 
-        onClick ={() => onButtonClick(button)}>{button}</button>
-        buttonsArray.push(buttonMarkup);
-    }      
-
-    return <div class="button-group">{buttonsArray}</div>;
+    return(
+        <div class='sectionButtons'>
+            {buttonsTitles.map(title => (
+                <Button
+                key={title}
+                isSelected={activeButton === title}
+                className={title}
+                onClick={() => onButtonClick(title)}
+                title={title}>
+                </Button>
+            ))}
+        </div>
+    );
 }
 
 export default Buttons;
