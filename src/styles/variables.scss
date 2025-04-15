@@ -4,5 +4,10 @@ $color-orange: #FCA311;
 $color-gray: #E5E5E5;
 $color-white: #FFFFFF;
 
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../../public/fonts/Bebas_Neue/BebasNeue-Regular.woff2) format("woff2");
+  }
+
 $font-header: 'Bebas Neue';
 $font-text: 'arial'; 

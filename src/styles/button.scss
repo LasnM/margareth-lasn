@@ -1,6 +1,19 @@
 @use './variables.scss' as variables;
 
-button {
+.button {
+    font-family: variables.$font-header;
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 25px;
+    margin: 6px;
     border: 2px;
+    background-color: variables.$color-white;
     border-color: variables.$color-black;
+    border-style: solid;
+}
+
+.button:hover{
+    color: variables.$color-white;
+    background-color: variables.$color-black;
 }

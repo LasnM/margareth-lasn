@@ -1,11 +1,12 @@
 import Button from './button';
+import '../styles/contactMeButton.scss';
 
 function ContactMeButton(){
     return(
-        <div className="flex justify-end" id='contact-btn'>
+        <div className="flex justify-end">
             <Button
         title='Contact Me'
-        className='button'
+        className='contact-button'
         onClick={() => alert('Contact me button was clicked!')}>
 
         </Button>
