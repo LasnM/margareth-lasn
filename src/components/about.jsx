@@ -1,7 +1,7 @@
 export default function About(){
     return( 
-    <div class="row bebas-neue">
-    <div class="col-6">
+    <div class="">
+    <div class="">
         <h1 class="heading">MARGARETH LASN</h1>
         <h4 class="heading">&lt;JUNIOR FRONTEND DEVELOPER /&gt; </h4>
         <div class="about-me">
