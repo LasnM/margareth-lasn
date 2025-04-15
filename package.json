@@ -18,10 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-
-     "build": "react-scripts build",
-
-     "test": "react-scripts test",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,7 +42,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
-    "postcss": "^7.0.39",
+    "postcss": "^8.5.3",
+    "postcss-flexbugs-fixes": "^5.0.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
