@@ -11,7 +11,7 @@ import Volunteering from './components/volunteering';
 import About from './components/about';
 import ContactMeButton from './components/contactMeButton';
 import ContactForm from './components/contactForm';
-import './styles.css';
+import './index.css';
 
 function MainContent(){
   const [activeSection, setActiveSection] = useState('work experience');

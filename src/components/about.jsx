@@ -12,7 +12,7 @@ export default function About(){
         </div>
     </div>
     <div class="col-6">
-        <img src="./images/Margareth_Lasn.jpg" alt="Picture of Margareth Lasn"></img>
+        <img src="./images/Margareth_Lasn.jpg" alt="Margareth Lasn"></img>
     </div>
     </div> );
 }
