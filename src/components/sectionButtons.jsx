@@ -3,14 +3,14 @@ import Button from './button';
 function Buttons({activeButton, onButtonClick}){
     const buttonsTitles = ['work experience', 'education', 'skills', 'projects', 'volunteering'];
     return(
-        <div class='sectionButtons'>
+        <div class='section-buttons'>
             {buttonsTitles.map(title => (
                 <Button
                 key={title}
                 isSelected={activeButton === title}
-                className={title}
                 onClick={() => onButtonClick(title)}
-                title={title}>
+                title={title}
+                id={title}>
                 </Button>
             ))}
         </div>

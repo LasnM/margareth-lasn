@@ -2,7 +2,7 @@ import Button from './button';
 
 function ContactMeButton(){
     return(
-        <div className="justify-end" id='contact-btn'>
+        <div className="flex justify-end" id='contact-btn'>
             <Button
         title='Contact Me'
         className='button'
