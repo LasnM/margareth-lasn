@@ -26,6 +26,13 @@ p {
     padding-top: 6px;
 }
 
+label {
+    font-size: 1.3em;
+}
 input, textarea {
     width: 18em;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: variables.$color-black;
+    padding: 3px;
 }
