@@ -1,30 +1,32 @@
+import '../styles/content.scss';
+
 export default function Skills(){
     return (
         <div class="skillset">
-            <div class="row">
-                <div class="col">
-                    <h5 class='list-title'>PROGRAMMING</h5>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="experience-paragraph">
+                    <h5 class='list-title flex justify-center'>PROGRAMMING</h5>
                     <ul>
-                        <li>JAVASCRIPT (COMPETENT)</li>
-                        <li>HTML (COMPETENT)</li>
-                        <li>CSS (COMPETENT)</li>
-                        <li>JAVA (ENTRY-LEVEL)</li>
-                        <li>C# (ENTRY-LEVEL)</li>
+                        <li className='flex justify-center'>JAVASCRIPT (COMPETENT)</li>
+                        <li className='flex justify-center'>HTML (COMPETENT)</li>
+                        <li className='flex justify-center'>CSS (COMPETENT)</li>
+                        <li className='flex justify-center'>JAVA (ENTRY-LEVEL)</li>
+                        <li className='flex justify-center'>C# (ENTRY-LEVEL)</li>
                     </ul>
                 </div>
-                <div class="col">
-                <h5 class='list-title'>TOOLS</h5>
+                <div class="experience-paragraph">
+                <h5 class='list-title flex justify-center'>TOOLS</h5>
                     <ul>
-                        <li>FIGMA (COMPETENT)</li>
-                        <li>VSCODE (COMPETENT)</li>
-                        <li>GIT AND GITHUB (COMPETENT)</li>
+                        <li className='flex justify-center'>FIGMA (COMPETENT)</li>
+                        <li className='flex justify-center'>VSCODE (COMPETENT)</li>
+                        <li className='flex justify-center'>GIT & GITHUB (COMPETENT)</li>
                     </ul>
                     </div>
-                <div class="col">
-                <h5 class='list-title'>FRAMEWORKS AND LIBRARIES</h5>
+                <div class="experience-paragraph">
+                <h5 class='list-title flex justify-center'>FRAMEWORKS & LIBRARIES</h5>
                     <ul>
-                        <li>BOOTSRAP (COMPETENT)</li>
-                        <li>REACT (ENTRY-LEVEL)</li>
+                        <li className='flex justify-center'>BOOTSRAP (COMPETENT)</li>
+                        <li className='flex justify-center'>REACT (ENTRY-LEVEL)</li>
                     </ul>
                 </div>
             </div>

@@ -26,7 +26,7 @@ function MainContent(){
           <SectionButton activeButton={activeSection} onButtonClick={setActiveSection} />
         </div>
   
-        <div class="content-section">
+        <div class="container content-section">
           {renderContent()}
         </div>
       </>

@@ -1,7 +1,9 @@
+import '../styles/content.scss';
+
 export default function Volunteering(){
     return (
         <div class="volunteering-positions">
-            <div class='position'>
+            <div class='experience-paragraph'>
                 <h5>BOOSTER CONFERENCE</h5>
                 <p><span>ON-SITE VOLUNTEER</span><span>MARCH 2025</span></p>
                 <p class='text'>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. 
@@ -12,7 +14,7 @@ export default function Volunteering(){
                 the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop.</p>
             </div>
-            <div class='position'>
+            <div class='experience-paragraph'>
                 <h5>ESN BERGEN</h5>
                 <p><span>WEBMASTER</span><span>AUGUST 2024 - PRESENT</span></p>
                 <p class='text'>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. 
@@ -23,7 +25,7 @@ export default function Volunteering(){
                 the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop.</p>
             </div>
-            <div class='position'>
+            <div class='experience-paragraph'>
                 <h5>NPO GEEKS ON WHEELS</h5>
                 <p><span>TEACHER</span><span>SEPTEMBER 2023 - NOVEMBER 2023</span></p>
                 <p class='text'>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. 
@@ -34,7 +36,7 @@ export default function Volunteering(){
                 the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop.</p>
             </div>
-            <div class='position'>
+            <div class='experience-paragraph'>
                 <h5>TALTECH STUDENT COUNCIL OF THE SCHOOL OF IT</h5>
                 <p><span>ACTIVE MEMBER</span><span>2020 - 2024</span></p>
                 <p><span>CHAIRMAN OF THE BOARD</span><span>2022 - 2023</span></p>
