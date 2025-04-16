@@ -1,6 +1,7 @@
 import Button from './button';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
+import '../styles/contactForm.scss';
 
 function ContactForm(){
     const form = useRef();
@@ -21,41 +22,55 @@ function ContactForm(){
 
     return(
         <div className="contact-form">
-            <h1>Contact me!</h1>
-            <div className='contactFormBox'>
+            <h1 className='flex justify-center'>Contact me!</h1>
+            <div className='container ml-auto mr-auto max-w-xs rounded-lg' id='contactFormBox'>
                 <p>
                 <h4>Reach out to me on:</h4>
                 </p>
                 <p>
-                <img src='./images/linkedin-square-icon.png' alt='linkedin icon'></img>
-                <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/margareth-lasn/" className='flex gap-2 items-center'
+                    target="_blank" rel="noopener noreferrer">
+                    <img src='./images/linkedin-square-icon.png' alt='linkedin icon' className='w-8'></img>
+                    <h4 className='hover:underline'>LinkedIn</h4>
+                    </a>
                 </p>
                 <p>
-                <img src='./images/mail-icon.png' alt='email icon'></img>
-                <h4>E-mail</h4>
+                    <a href="mailto:lasnmargareth5@gmail.com" className='flex gap-2 items-center'
+                    target="_blank" rel="noopener noreferrer">
+                        <img src='./images/mail-icon.png' alt='email icon' className='w-8'></img>
+                        <h4 className='hover:underline'>E-mail</h4>
+                    </a>
                 </p>
                 <p>
                     <h4>Or leave me a message here:</h4>
                 </p>
                 <form ref={form} onSubmit={sendEmail}>
                     <p>
-                    <label for='name'>Name</label>
-                    <input type="text" name='name' required/>
+                        <p>
+                            <label for='name'>Name</label>
+                        </p>
+                        <input className='rounded' type="text" name='name' required/>
                     </p>
                     <p>
-                        <label for='email'>E-mail</label>
-                        <input type="text" name='email' required/>
+                        <p>
+                            <label for='email'>E-mail</label>
+                        </p>
+                        <input className='rounded' type="text" name='email' required/>
                     </p>
                     <p>
-                        <label for='inquiry'>Inquiry</label>
-                        <input name='inquiry' type="text" rows='10' required/>
+                        <p>
+                            <label for='inquiry'>Inquiry</label>
+                        </p>
+                        <textarea className='rounded' name='inquiry' type="text" rows='5' required/>
                     </p>
-                    <Button
-                    title='Send'
-                    className='button'
-                    type='submit'>
+                    <div className='flex justify-end p-2'>
+                        <Button
+                        title='Send'
+                        className='button'
+                        type='submit'>
                     
-                    </Button>
+                        </Button>
+                    </div>
                 </form>
             </div>
         </div>)
