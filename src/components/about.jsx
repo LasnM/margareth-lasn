@@ -8,9 +8,9 @@ export default function About(){
                     <h1 className='heading' id='name'>MARGARETH LASN</h1>
                     <h4 className="heading" id='position'>&lt;JUNIOR FRONTEND DEVELOPER /&gt; </h4>
                     <div className='' id="about-me">
-                        Business Information Technology student at Tallinn University of Technology.
-                        Doing frontend development projects in my free time, focusing mainly on mastering 
-                        working with React framework and TailwindCSS.
+                        I'm a Tallinn, Estonia based junior developer skilled in HTML, CSS, JavaScript, and experience in using
+                        React, Tailwind CSS, Bootstrap, and SASS frameworks. 
+                        Gaining extra knowledge on responsive and accessible web design in my spare time.                   
                     </div>
                 </div>
                 <div className='flex items-center justify-center'>
