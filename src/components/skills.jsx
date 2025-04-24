@@ -26,6 +26,7 @@ export default function Skills(){
                 <h5 class='list-title flex justify-center'>FRAMEWORKS & LIBRARIES</h5>
                     <ul>
                         <li className='flex justify-center'>BOOTSRAP (COMPETENT)</li>
+                        <li className='flex justify-center'>TAILWIND (ENTRY-LEVEL)</li>
                         <li className='flex justify-center'>REACT (ENTRY-LEVEL)</li>
                     </ul>
                 </div>
