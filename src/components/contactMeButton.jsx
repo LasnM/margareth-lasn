@@ -5,11 +5,9 @@ function ContactMeButton(){
     return(
         <div className="flex justify-end">
             <Button
-            to='contactme'
+            to='#contactme'
         title='Contact Me'
-        className='contact-button'
-        onClick={() => alert('Contact me button was clicked!')}>
-
+        className='contact-button'>
         </Button>
         </div>
     );

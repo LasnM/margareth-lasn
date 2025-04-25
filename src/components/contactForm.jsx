@@ -21,7 +21,7 @@ function ContactForm(){
     };
 
     return(
-        <div className="contact-form">
+        <div id='contactme' className="contact-form">
             <h1 className='flex justify-center'>Contact me!</h1>
             <div className='container ml-auto mr-auto max-w-xs rounded-lg' id='contactFormBox'>
                 <p>
