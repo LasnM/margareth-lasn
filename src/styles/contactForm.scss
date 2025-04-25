@@ -30,9 +30,25 @@ label {
     font-size: 1.3em;
 }
 input, textarea {
-    width: 18em;
+    max-width: 18em;
     border-style: solid;
     border-width: 1.5px;
     border-color: variables.$color-black;
     padding: 3px;
+}
+
+@media only screen and (max-width: variables.$screen-mobile){
+    h1 {
+        font-size: 2em;
+    }
+
+    input, textarea {
+        width: 13em;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

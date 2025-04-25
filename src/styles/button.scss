@@ -11,10 +11,6 @@
     background-color: variables.$color-white;
     border-color: variables.$color-black;
     border-style: solid;
-    @media screen and (max-width: variables.$screen-mobile) {
-        margin: auto; 
-        font-size: 0.7em;
-    }
 }
 
 .button:hover{

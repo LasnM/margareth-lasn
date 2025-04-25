@@ -49,19 +49,19 @@ function ContactForm(){
                         <p>
                             <label for='name'>Name</label>
                         </p>
-                        <input className='rounded' type="text" name='name' required/>
+                        <input className='user-input rounded' type="text" name='name' required/>
                     </p>
                     <p>
                         <p>
                             <label for='email'>E-mail</label>
                         </p>
-                        <input className='rounded' type="text" name='email' required/>
+                        <input className='user-input rounded' type="text" name='email' required/>
                     </p>
                     <p>
                         <p>
                             <label for='inquiry'>Inquiry</label>
                         </p>
-                        <textarea className='rounded' name='inquiry' type="text" rows='5' required/>
+                        <textarea className='user-input rounded' name='inquiry' type="text" rows='5' required/>
                     </p>
                     <div className='flex justify-end p-2'>
                         <Button
