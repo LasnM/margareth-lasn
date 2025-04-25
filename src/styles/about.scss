@@ -6,11 +6,8 @@
     line-height: normal;
 }
 
-#name {
+#name{
     font-size: 5em;
-    @media screen and (max-width: 1023px){
-        font-size: 3em;
-    }
 }
 
 #position {
@@ -28,20 +25,72 @@
   text-align: justify;
 }
 
-.text-section{
-    @media screen and (max-width: 775px){
-        order: 2;
+#profile-pic {
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: variables.$screen-tablet){
+    #profile-pic{
+        max-width: 300px;
+    }
+
+}
+
+/* large mobile view */
+@media only screen and (max-width: variables.$screen-lg-mobile){
+    #profile-pic{
+        max-width: 300px;
+    }
+
+    #name{
+        font-size: 2.5em;
+    }
+
+    #position{
+        font-size: 1.5em;
+    }
+
+    #about-me{
+        max-width: 400px;
+        font-size: 1em;
+    }
+
+    .picture-section{
+        order:1;
+    }
+
+    .text-section{
+        order:2;
     }
 }
 
-#profile-pic {
-    border-radius: 8px;
-    @media screen and (max-width: 775px) {
-        display: flex;
-        max-width: 250px;
-        .picture-section{
-            order: 1;
-        }
+@media only screen and (max-width: variables.$screen-mobile){
+    #profile-pic{
+        max-width: 200px;
     }
-  }
+
+    .picture-section{
+        order: 1;
+    }
+
+    .text-section{
+        order: 2;
+    }
+
+    #name{
+        font-size: 2em;
+    }
+
+    #position{
+        font-size: 1em;
+    }
+
+    #about-me{
+        max-width: 300px;
+        font-size: 0.8em;
+    }
+}
+
+
+
   
