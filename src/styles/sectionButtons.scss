@@ -3,3 +3,9 @@
 .selected {
     background-color: variables.$color-orange;
 }
+
+.section-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
