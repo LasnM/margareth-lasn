@@ -6,26 +6,35 @@ export default function Education(){
         <div class="education">
             <div class='experience-paragraph'>
                 <h5>WESTERN NORWAY UNIVERSITY OF APPLIED SCIENCES</h5>
-                <p><span>ERASMUS EXCHANGE STUDENT</span><span>2024 - PRESENT</span></p>
-                <p class='text'>Lorem Ipsum is simply dummy text of the printing and  typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of  type and scrambled it to make a type 
-                specimen book. It has survived not  only five centuries, but also the leap into 
-                electronic typesetting,  remaining essentially unchanged. It was popularised in 
-                the 1960s with  the release of Letraset sheets containing Lorem Ipsum passages, 
-                and more recently with desktop.</p>
+                <div className='position-place'>
+                    <span>ERASMUS EXCHANGE STUDENT</span><span className='date'>2024 - PRESENT</span>
+                </div>
+                <div>
+                On an Erasmus Exchange program through my master’s program at Tallinn University of Technology. 
+                Have focused my studies in this institution on frontend development by taking a course in advanced web 
+                applications and doing an internship at Lyse Tele AS.
+                </div>
             </div>
             <div class='experience-paragraph'>
                 <h5>TALLINN UNIVERSITY OF TECHNOLOGY</h5>
-                <p><span>BUSINESS INFORMATION TECHNOLOFY MASTER'S DEGREE</span><span>2023 - PRESENT</span></p>
-                <p class='text'>Shifted focus toward frontend development by taking elective courses in UI/UX 
-                    design and web development.</p>
+                <div className='position-place'>
+                    <span>BUSINESS INFORMATION TECHNOLOFY MASTER'S DEGREE</span><span className='date'>2023 - PRESENT</span>
+                </div>
+                <div>
+                During my studies at this level, I have shifted my full focus to frontend development by taking elective courses in 
+                UI/UX design and web development.
+                </div>
             </div>
             <div class='experience-paragraph'>
                 <h5>TALLINN UNIVERSITY OF TECHNOLOGY</h5>
-                <p><span>BUSINESS INFORMATION TECHNOLOFY BACHELOR'S DEGREE</span><span>2020 - 2023</span></p>
-                <p class='text'>Gained base programming skills with HTML, CSS, and JavaScript through hands-on coursework.
-                First exposure to frontend programming that sparked a long-term interest in creating user interfaces.</p>
+                <div className='position-place'>
+                    <span>BUSINESS INFORMATION TECHNOLOFY BACHELOR'S DEGREE</span><span className='date'>2020 - 2023</span>
+                </div>
+                <div>
+                During my studies in this bachelor’s program, I gained basic programming skills with HTML, CSS, and JavaScript through 
+                hands-on coursework. This is also where I first got exposed to frontend programming, that sparked a long-term interest in 
+                creating user interfaces.
+                </div>
             </div>
         </div>
     );
