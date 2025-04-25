@@ -9,6 +9,13 @@ function ContactForm(){
     const sendEmail = (e) => {
         e.preventDefault();
 
+        const currentForm = form.current;
+
+        if (!currentForm.checkValidity()) {
+            currentForm.reportValidity();
+            return;
+        }
+        
         emailjs.sendForm('contact_service_2gelk2r', 'template_f94yhi9', form.current, 'tLj_LJi8eIr1qAC6v')
         .then(() => {
             console.log('Success!');
@@ -44,7 +51,7 @@ function ContactForm(){
                 <p>
                     <h4>Or leave me a message here:</h4>
                 </p>
-                <form ref={form} onSubmit={sendEmail}>
+                <form name='message' ref={form} onSubmit={sendEmail}>
                     <p>
                         <p>
                             <label for='name'>Name</label>
