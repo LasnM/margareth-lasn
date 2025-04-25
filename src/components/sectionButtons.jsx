@@ -6,7 +6,7 @@ function Buttons(){
     const location = useLocation();
     const buttonsTitles = ['work experience', 'education', 'skills', 'projects', 'volunteering'];
     return(
-        <div class='section-buttons flex justify-center'>
+        <div className='section-buttons flex justify-center'>
             {buttonsTitles.map(title => (
                 <Button
                 to={`/${title.replaceAll(' ', '')}`}

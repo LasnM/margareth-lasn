@@ -11,6 +11,9 @@
     background-color: variables.$color-white;
     border-color: variables.$color-black;
     border-style: solid;
+    @media screen and (max-width: 640px) {
+        margin: auto;
+    }
 }
 
 .button:hover{
