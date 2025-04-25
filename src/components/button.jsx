@@ -1,10 +1,11 @@
 import '../styles/button.scss';
+import { Link } from 'react-router-dom';
 
-const Button = ({title, onClick, isSelected, className = '', type='button'}) => {
+const Button = ({title, to, onClick, isSelected, className = ''}) => {
     return(
-        <button type={type} className={`button ${isSelected ? 'selected' : ''} ${className}`} onClick={onClick}>
+        <Link to={to} className={`button ${isSelected ? 'selected' : ''} ${className}`} onClick={onClick}>
             {title}
-        </button>
+        </Link>
     );
 };
 
