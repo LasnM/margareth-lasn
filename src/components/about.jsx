@@ -9,7 +9,7 @@ export default function About(){
                     <h4 className="heading" id='position'>&lt;JUNIOR FRONTEND DEVELOPER /&gt; </h4>
                     <div id="about-me">
                         I'm a Tallinn, Estonia based junior developer skilled in HTML, CSS, JavaScript, and experience in using
-                        React, Tailwind CSS, Bootstrap, and SASS frameworks. 
+                        React, Tailwind CSS, Bootstrap, and Sass frameworks. 
                         Gaining extra knowledge on responsive and accessible web design in my spare time.                   
                     </div>
                 </div>
