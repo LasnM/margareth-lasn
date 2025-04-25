@@ -28,7 +28,20 @@
   text-align: justify;
 }
 
+.text-section{
+    @media screen and (max-width: 775px){
+        order: 2;
+    }
+}
+
 #profile-pic {
     border-radius: 8px;
+    @media screen and (max-width: 775px) {
+        display: flex;
+        max-width: 250px;
+        .picture-section{
+            order: 1;
+        }
+    }
   }
   
