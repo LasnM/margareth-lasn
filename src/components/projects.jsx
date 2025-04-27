@@ -6,7 +6,7 @@ export default function Projects(){
     return (
         <div className='flex flex-wrap justify-center'>
             {projects.map((project, index) => (
-                <div className='container experience-paragraph project-section flex flex-col justify-between'>
+                <div className='container experience-paragraph card-content-section flex flex-col justify-between'>
                     <div className="flex flex-col">
                         <h5 className='flex justify-center'>{project.title}</h5>
                         {project.image != null ? <img src='./images/software-testing-lab.png' alt={project.title}
