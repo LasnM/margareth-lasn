@@ -10,7 +10,7 @@ const projects = [
     {
         title: 'MORE WILL BE ADDED SOON!',
         description: 
-        'I am continuously working on new projects to develop my frontend development skills in my spare time. As soon as these projects are finished and polished, I will be showcasing them on the projects list here. In the meantime, feel free to visit my GitHub profile you can access by clicking the VISIT GITHUB’ button, where you can find a collection of my current coding experiments, ongoing projects, and contributions.',
+        'I am continuously working on new projects to develop my frontend development skills in my spare time. As soon as these projects are finished and polished, I will be showcasing them on the projects list here. In the meantime, feel free to visit my GitHub profile you can access by clicking the VISIT GITHUB button, where you can find a collection of my current coding experiments, ongoing projects, and contributions.',
         buttonText: 'VISIT GITHUB',
         link: 'https://github.com/LasnM'
     }
