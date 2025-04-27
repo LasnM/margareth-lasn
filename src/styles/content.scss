@@ -42,9 +42,27 @@ ul{
     margin-top: 6px;
     margin-bottom: 16px;
     max-width: 400px;
+    min-width: 250px;
     margin-left: 1em;
     margin-right: 1em;
     border-radius: 0.5em;
+}
+
+.skillset{
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    margin: 1em;
+}
+
+.logos{
+    max-width: 50px;
+}
+
+.level{
+    margin: 6px;
 }
 
 @media only screen and (max-width: variables.$screen-mobile){
@@ -56,14 +74,4 @@ ul{
         font-size: 0.75em;
     }
 
-    .project-section{
-        max-width: 275px;
-    }
-
-}
-
-@media only screen and (max-width: variables.$screen-lg-mobile){
-    .project-section{
-        max-width: 400px;
-    }
 }
