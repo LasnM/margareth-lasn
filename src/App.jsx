@@ -15,7 +15,7 @@ function MainContent(){
       <div className="content-buttons">
         <SectionButton/>
       </div>
-      <div className="container content-section">
+      <div>
         <Routes>
           <Route path="/" element={<WorkExperience />} />
           <Route path="/workexperience" element={<WorkExperience />} />

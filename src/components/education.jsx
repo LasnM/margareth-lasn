@@ -3,7 +3,7 @@ import '../styles/content.scss';
 
 export default function Education(){
     return (
-        <div class="education">
+        <div class="container content-section education">
             <div class='experience-paragraph'>
                 <h5>WESTERN NORWAY UNIVERSITY OF APPLIED SCIENCES</h5>
                 <div className='position-place'>

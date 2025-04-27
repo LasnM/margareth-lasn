@@ -2,7 +2,7 @@ import '../styles/content.scss';
 
 export default function Volunteering(){
     return (
-        <div class="volunteering-positions">
+        <div class="container content-section volunteering-positions">
             <div class='experience-paragraph'>
                 <h5>BOOSTER CONFERENCE</h5>
                 <div className='position-place'>

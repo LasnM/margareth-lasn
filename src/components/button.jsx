@@ -1,7 +1,7 @@
 import '../styles/button.scss';
 import { Link } from 'react-router-dom';
 
-const Button = ({title, to, onClick, isSelected, className = ''}) => {
+const Button = ({title, to, onClick, isSelected, className = '', target=''}) => {
   if (!to) {
     return (
       <button
@@ -13,10 +13,11 @@ const Button = ({title, to, onClick, isSelected, className = ''}) => {
     );
   }
 
-  if(to?.startsWith('#')){
+  if(to?.startsWith('#') || to?.startsWith('http')){
         return (
             <a
               href={to}
+              target={target}
               onClick={onClick}
               className={`button ${isSelected ? 'selected' : ''} ${className}`}
             >

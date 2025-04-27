@@ -2,7 +2,7 @@ import '../styles/content.scss';
 
 export default function Experience(){
     return (
-        <div class='work-experience'>
+        <div class='container content-section work-experience'>
             <div class='experience-paragraph'>
                 <h5>INNOVATION AND TECHNOLOGY INTERN</h5>
                 <div className='position-place'>

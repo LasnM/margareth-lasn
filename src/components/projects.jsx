@@ -1,15 +1,28 @@
 import '../styles/content.scss';
+import projects from '../data/projectsData';
+import Button from './button';
 
 export default function Projects(){
     return (
-        <div className="experience-paragraph">
-            <h5 className='object-top-left'>WILL BE ADDED SOON!</h5>
-            <div className='projects flex gap-2 items-center'>
-                <a href="https://github.com/LasnM" target="_blank" rel="noopener noreferrer">
-                    <img src="./images/github-mark.png" alt="Git logo" className="w-8"></img>
-                </a>
-            <a href="https://github.com/LasnM " target="_blank" rel="noopener noreferrer" className='hover:underline'>GITHUB PROFILE</a>
-            </div>
+        <div className='flex justify-start flex-wrap'>
+            {projects.map((project, index) => (
+                <div className='container content-section experience-paragraph project-section'>
+                    <h5 className='flex justify-center'>{project.title}</h5>
+                    {project.image != null ? <img src='./images/software-testing-lab.png' alt={project.title}
+                    className='rounded border border-black'></img>
+                    : null}
+                    <div className='m-2 flex text-justify'>
+                        {project.description}
+                    </div>
+                    <div className="flex justify-center">
+                        <Button
+                        title={project.buttonText}
+                        to={project.link}
+                        target='_blank'
+                        ></Button>
+                    </div>
+                </div>
+            ))}
         </div>
 
     );
